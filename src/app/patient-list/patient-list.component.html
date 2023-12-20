@@ -8,6 +8,7 @@
             <th>DOB</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +19,9 @@
             <td>{{patient.dob}}</td>
             <td>{{patient.email}}</td>
             <td>{{patient.phoneNumber}}</td>
+            <td>
+                <button (click) = "updatePatient(patient.patientId)" class = "btn btn-info">Update</button>
+            </td>
         </tr>
 
     </tbody>
