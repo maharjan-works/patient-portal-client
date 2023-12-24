@@ -27,4 +27,8 @@ export class PatientService {
   updatePatient(patientId: number,  patient: Patient): Observable<Object>{
     return this.httpClient.put<Object>(`${this.baseURL}/${patientId}`, patient);
   }
+
+  deletePatient(patientId: number): Observable<Object>{
+    return this.httpClient.delete<Object>(`${this.baseURL}/${patientId}`);
+  }
 }

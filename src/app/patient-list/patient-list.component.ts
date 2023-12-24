@@ -29,4 +29,12 @@ export class PatientListComponent implements OnInit {
     this.router.navigate(['update-patient',patientId]);
  }
 
+ deletePatient(patientId: number){
+    this.patientService.deletePatient(patientId).subscribe(data => {
+      console.log(data);
+      this.getPatients();
+    }, 
+    error => console.log(error));
+ }
+
 }
