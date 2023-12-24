@@ -8,6 +8,7 @@ import { PatientListComponent } from './patient-list/patient-list.component';
 import { CreatePatientComponent } from './create-patient/create-patient.component';
 import { FormsModule } from '@angular/forms';
 import { UpdatePatientComponent } from './update-patient/update-patient.component';
+import { ViewPatientComponent } from './view-patient/view-patient.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UpdatePatientComponent } from './update-patient/update-patient.componen
     AppComponent,
     PatientListComponent,
     CreatePatientComponent,
-    UpdatePatientComponent
+    UpdatePatientComponent,
+    ViewPatientComponent
   ],
   imports: [
     BrowserModule,

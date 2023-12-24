@@ -36,5 +36,11 @@ export class PatientListComponent implements OnInit {
     }, 
     error => console.log(error));
  }
+ 
+ viewPatient(patientId: number){
+  this.router.navigate(['view-patient',patientId]);
+ }
+
+
 
 }

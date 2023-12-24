@@ -8,7 +8,7 @@
             <th>DOB</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Actions</th>
+            <th colspan="3" style="text-align:center;">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,6 +24,9 @@
             </td>
             <td>
                 <button (click)="deletePatient(patient.patientId)" class="btn btn-danger">DELETE</button>
+            </td>
+            <td>
+                <button (click)="viewPatient(patient.patientId)" class = "btn btn-success">VIEW</button>
             </td>
         </tr>
 
